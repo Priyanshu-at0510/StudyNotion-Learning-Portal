@@ -5,6 +5,8 @@ import { HighlightText } from '../components/core/Home Page/HighlightText';
 import { CTAbutton } from '../components/core/Home Page/CTAbutton';
 import Banner from "../assets/Images/banner.mp4";
 import { CodeBlocks } from '../components/core/Home Page/CodeBlocks';
+import { TimelineSection } from '../components/core/Home Page/TimelineSection';
+import { LearningLanguageSection } from '../components/core/Home Page/LearningLanguageSection';
 export const Home = () => {
   return (
     <div>
@@ -109,7 +111,41 @@ export const Home = () => {
 
         </div>
         {/* section2 */}
-  
+        <div className='bg-pure-greys-5 text-richblack-700'>
+          <div className='homepage_bg h-[310px]'>
+           <div className='w-11/12 max-w-maxContent flex flex-col items-center gap-5 mx-auto'>
+             <div className='h-[200px]'></div>
+             <div className='flex gap-7 text-white'>
+               <CTAbutton active={true} linkto={"/signin"}>
+                 <div className='flex items-center gap-3'>
+                  Explore Full Catlog
+                  <FaArrowRight/>
+                 </div>
+                 
+               </CTAbutton>
+               <CTAbutton active={false} linkto={"/login"}>
+                <div>Learn More</div>
+               </CTAbutton>
+             </div>
+           </div>
+          </div>
+          <div className='w-11/12 max-w-maxContent mx-auto flex flex-col items-center justify-between gap-7'>
+           <div className='flex gap-9 mb-10 mt-[95px]'>
+            <div className='text-4xl font-semibold w-[45%]'>
+              Get the Skills You need for a
+              <HighlightText text={" job that is in demand."} />
+            </div>
+            <div className='flex flex-col w-[40%] items-start gap-10'>
+               <div className='text-[16px]'>The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.</div>
+               <CTAbutton active={true} linkto={"/signup"}>
+                <div>Learn More</div>
+               </CTAbutton>
+            </div>
+           </div>
+           <TimelineSection/>
+           <LearningLanguageSection/>
+          </div>
+        </div>
         {/* section3 */}
 
         {/* Footer */}
