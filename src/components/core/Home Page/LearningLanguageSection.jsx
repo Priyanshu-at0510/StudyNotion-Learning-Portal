@@ -15,7 +15,7 @@ export const LearningLanguageSection = () => {
              <div className='text-center text-richblack-600 mx-auto text-base mt-1 w-[70%] font-medium'>
                 Using spin making learning multiple languages easy. with 20+ languages realistic voice-over, progress tracking, custom schedule and more.
              </div>
-             <div className='flex flex-row items-center justify-center mt-8 mx-auto'>
+             <div className='flex flex-col md:flex-row items-center justify-center mt-8 mx-auto'>
                <img 
                 src={know_your_progress}
                 alt='know_your_progress'
