@@ -9,6 +9,7 @@ import { TimelineSection } from '../components/core/Home Page/TimelineSection';
 import { LearningLanguageSection } from '../components/core/Home Page/LearningLanguageSection';
 import { InstructorSection } from '../components/core/Home Page/InstructorSection';
 import { ExploreMore } from '../components/core/Home Page/ExploreMore';
+import { Footer } from '../components/common/Footer';
 export const Home = () => {
   return (
     <div>
@@ -158,7 +159,7 @@ export const Home = () => {
           {/* Review slider here */}
         </div>
         {/* Footer */}
-        
+        <Footer/>
     </div>
   )
 }
